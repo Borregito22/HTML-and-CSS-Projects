@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Hypercar Rentals</title>
 		<meta charset="utf-8">
+		<title>Hypercar Rentals</title>
+		<link rel="stylesheet" href="./CSS/shared.css">
+		<link rel="stylesheet" href="./CSS/animations.css">
 	</head>
 	<body>
 		<!--NAV-->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#contact"><li>RESERVATIONS</li></a>
@@ -19,25 +21,25 @@
 		
 		<!--HOME-->
 		<div id="home">
-			<div>
-				<div>
-					<span>Rent a Hypercar!</span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Rent a Hypercar!</span>
 				</div>
 			</div>
 		</div>
 		<!--END HOME-->
 		
 		<!--GALLERY-->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container"">
 				<h1>Gallery</h1>
-				<div>
+				<div class="flex-container">
 				
 					<!--PHOTO-CONTAINER 1-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_1.jpg" width="650" height="400" alt="Koenigsegg One:1">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -46,10 +48,10 @@
 					<!--END PHOTO-CONTAINER 1-->
 					
 					<!--PHOTO-CONTAINER 2-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_2.jpg" width="650" height="400" alt="Pagani Huayra">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -58,10 +60,10 @@
 					<!--END PHOTO-CONTAINER 2-->
 					
 					<!--PHOTO-CONTAINER 3-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_3.jpg" width="650" height="400" alt="Hennessey Venom F5">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -70,10 +72,10 @@
 					<!--END PHOTO-CONTAINER 3-->
 					
 					<!--PHOTO-CONTAINER 4-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_4.jpg" width="650" height="400" alt="Ferrari LaFerrari">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -82,10 +84,10 @@
 					<!--END PHOTO-CONTAINER 4-->
 					
 					<!--PHOTO-CONTAINER 5-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_5.jpg" width="650" height="400" alt="Bugatti Chiron Sport">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -94,10 +96,10 @@
 					<!--END PHOTO-CONTAINER 5-->
 					
 					<!--PHOTO-CONTAINER 6-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_6.jpg" width="650" height="400" alt="McLaren Senna">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -106,10 +108,10 @@
 					<!--END PHOTO-CONTAINER 6-->
 					
 					<!--PHOTO-CONTAINER 7-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_7.jpg" width="650" height="400" alt="McLaren P1">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -118,10 +120,10 @@
 					<!--END PHOTO-CONTAINER 7-->
 					
 					<!--PHOTO-CONTAINER 8-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_8.jpg" width="650" height="400" alt="Porsche 918 Spyder">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -130,10 +132,10 @@
 					<!--END PHOTO-CONTAINER 8-->
 					
 					<!--PHOTO-CONTAINER 9-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_9.jpg" width="650" height="400" alt="Rimac Nevera">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several hypercars waiting for you to experience, book your drive today!</p>
 							</div>
@@ -147,27 +149,27 @@
 		<!--END GALLERY-->
 		
 		<!--RSVP-->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
 						<h2><span>Your adventure is out on the open road!</span>
 							<br />Reserve your drive today!
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Please provide us with your basic contact information.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
-								<input class="rsvp" type="text" value="First Name">
-								<input class="rsvp" type="text" value="Last Name">
-								<input class="rsvp" type="text" value="Email Address">
-								<input class="rsvp" type="text" value="Phone Number">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
@@ -179,7 +181,7 @@
 		<!--END RSVP-->
 		
 		<!--FOOTER-->
-		<div>
+		<div id="footer">
 			www.hypercarrentals.com &nbsp;|&nbsp; &copy; 2021
 		</div>
 		<!--END FOOTER-->
