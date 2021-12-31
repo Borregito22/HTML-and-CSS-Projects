@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Worthy.Welding</title>
-		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		<!--NAV-->
@@ -35,9 +37,9 @@
 				<div>
 					
 					<!--Photo-Container 1-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_1.jpg" width="200" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_1.jpg" width="200" height="200" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -48,9 +50,9 @@
 					<!--End Photo-Container 1-->
 					
 					<!--Photo-Container 2-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_2.png" width="250" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_2.png" width="250" height="200" onclick="openModal();currentSlide(2)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -61,9 +63,9 @@
 					<!--End Photo-Container 2-->
 					
 					<!--Photo-Container 3-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_3.jpg" width="200" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_3.jpg" width="200" height="200" onclick="openModal();currentSlide(3)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -74,9 +76,9 @@
 					<!--End Photo-Container 3-->
 					
 					<!--Photo-Container 4-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_4.jpg" width="200" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_4.jpg" width="200" height="200" onclick="openModal();currentSlide(4)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -87,9 +89,9 @@
 					<!--End Photo-Container 4-->
 					
 					<!--Photo-Container 5-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_5.jpg" width="200" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_5.jpg" width="200" height="200" onclick="openModal();currentSlide(5)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -100,9 +102,9 @@
 					<!--End Photo-Container 5-->
 					
 					<!--Photo-Container 6-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_6.jpg" width="200" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_6.jpg" width="200" height="200" onclick="openModal();currentSlide(6)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -113,9 +115,9 @@
 					<!--End Photo-Container 6-->
 					
 					<!--Photo-Container 7-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_7.jpg" width="200" height="200" alt="Welds">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_7.jpg" width="200" height="200" onclick="openModal();currentSlide(7)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -126,9 +128,9 @@
 					<!--End Photo-Container 7-->
 					
 					<!--Photo-Container 8-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_8.jpg" width="200" height="200" alt="Welder">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_8.jpg" width="200" height="200" onclick="openModal();currentSlide(8)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -139,9 +141,9 @@
 					<!--End Photo-Container 8-->
 					
 					<!--Photo-Container 9-->
-					<div>
-						<div>
-							<img src="./Images/thumbnail_9.jpg" width="200" height="200" alt="Welders">
+					<div class="row">
+						<div class="column">
+							<img src="./Images/thumbnail_9.jpg" width="200" height="200" onclick="openModal();currentSlide(9)" class="hover-shadow">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>We have several welders ready for your custom needs,
@@ -155,12 +157,114 @@
 			</div>
 		</section>
 		<!--End GALLERY-->
+
+		<!-- MODAL/LIGHTBOX-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 9</div>
+					<img src="./Images/thumbnail_1.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 9</div>
+					<img src="./Images/thumbnail_2.png" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 9</div>
+					<img src="./Images/thumbnail_3.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 9</div>
+					<img src="./Images/thumbnail_4.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="./Images/thumbnail_5.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="./Images/thumbnail_6.jpg" style="width: 100%"> 
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="./Images/thumbnail_7.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="./Images/thumbnail_8.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="./Images/thumbnail_9.jpg" style="width: 100%">
+				</div>
+
+			</div>
+		</div>
+		<!-- End MODAL/LIGHTBOX -->
+
+		<!-- NEXT/PREVIOUS CONTROLS -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- End NEXT/PREVIOUS CONTROLS-->
+
+		<!-- CAPTION TEXT -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+		<!-- End CAPTION TEXT-->
+
+		<!-- THUMBNAIL IMAGE CONTROLS -->
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Welds">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Welders">
+		</div>
+
+		<div class="column">
+			<img class="demo cursor" src="./Images/thumbnail_9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Welders">
+		</div>
+		<!-- End THUMBNAIL IMAGE CONTROLS-->
 		
 		<!--VIDEO-->
 		<div id="video">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/RxynHeJCyoA" title="YouTube video player"
-			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-			picture-in-picture" allowfullscreen>
+			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 			</iframe>
 		</div>
 		<!--End VIDEO-->
