@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Google Hosted Library for jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <script>
+            // $ replaces jQuery
+            // document selects the entire HTML page
+            // .ready checks if the file is ready
+            $(document).ready(function() {
+                // HTML tag is the target for $
+                // .append inserts content, specified by the parameter,
+                // to the end of each element in the set of matched elements
+                $("html").append(
+                    // "" (quotation marks) required becuase information is in string form
+                    // \ (backslash) Continues to the next line
+                    // '' (single quotes) required because it'll end the string if double quotes are used
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                // Affects CSS of Paragraph 2 element to change color property
+                $("#2").css({"color":"red"});
+                // When Paragraph 3 is clicked, it hides the Heading 1 element
+                $("#3").click(function() {
+                    $('h1').hide();
+                });
+            });
+        </script>
+
+    </body>
+</html>
